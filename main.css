@@ -11,6 +11,14 @@ html {
     display: flex;
     height: 100%;
 }
+body {
+    flex: 1;
+    display: flex;
+    color: white;
+    /* FONT */
+    font-family: 'Press Start 2P', cursive;
+}
+
 button {
     background-color: transparent;
 }
@@ -61,7 +69,34 @@ a {
 .--fx-5 {
     flex: 5;
 }
+.--col {
+    flex-direction: column;
+}
+
+/* CENTER */
+.--ctr {
+    align-items: center;
+    justify-content: center;
+}
+/* VERTICAL CENTER */
+.--vctr {
+    align-items: center;
+}
+/* HORIZONTAL CENTER */
+.--hctr {
+    justify-content: center;
+}
 
 #wrapper {
-    background-color: rebeccapurple;
+    background-color: #272727;
+}
+
+header {
+    padding: 10px;
+}
+main {
+    background: black;
+}
+footer {
+    padding: 10px;
 }
