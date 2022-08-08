@@ -10,175 +10,182 @@
 </head>
 <body>
     <!-- WRAPPER -->
-    <main id="wrapper" class="--fx1">
+    <div id="wrapper" class="--fx1 --col">
 
-        <section class="--fx1 --col">
+        <header class="--fx --ctr">
+            <a href="index.html">Atrás</a>
+            <pre><h2> | </h2></pre>
+            <a href="unused.html">Recargar</a>
+        </header>
+        <main class="--fx1">
+            <section class="--fx1 --col">
             
-            <article class="--fx1 --col --ctr">
-                <a href="index.html">Atrás</a>
-                <a href="index.html" download="">Descargar HTML</a>
-            </article>
-
-            <article class="--fx1 --ctr">
-                <!-- KEYBOARD DISPLAY-->
-                <kbd>Hola</kbd>
-            </article>
-
-            <article class="--fx1 --ctr">
-                <!-- FILES -->
-                <nav>
-                    <a href="/html/">HTML</a> |
-                    <a href="/css/">CSS</a> |
-                    <a href="/js/">JavaScript</a> |
-                    <a href="/python/">Python</a>
-                </nav>
-            </article>
-
-            <article class="--fx1 --ctr">
-                <!-- OBJECT AUTOPLAY -->
-                <object data="assets/horse.wav">
-                    <param name="autoplay" value="true">
-                </object>
-            </article>
-                        
-            <article class="--fx1 --ctr">
-                <!-- NOSCRIPT -->
-                <script>
-                    document.write("Hello World!")
-                </script>
-                <noscript>Your browser does not support JavaScript!</noscript>
-            </article>
-
-            <article class="--fx1 --col --ctr">
-                <!-- PROGRESS BAR -->
-                <label for="file">Downloading progress:
-                    <progress id="file" value="32" max="100"> 32% </progress>
-                </label>
-                <label for="disk_c">Disk usage C:
-                    <meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter><br>
-                </label>
-                <label for="disk_d">Disk usage D:
-                    <meter id="disk_d" value="0.6">60%</meter>
-                </label>
-            </article>
+                <article class="--fx1 --col --ctr">
+                    <a href="index.html" download="">Descargar HTML</a>
+                </article>
     
-            <article class="--fx1 --ctr">
-                <h1>The samp element</h1>
-                <p>Message from my computer:</p>
-                <p><samp>File not found.<br>Press F1 to continue</samp></p>
-            </article>
-
-            <article class="--fx1 --col --ctr">
-                The dialog tag defines a dialog box or subwindow.
-                The dialog element makes it easy to create popup dialogs and modals on a web page.
-                <dialog open>This is an open dialog window</dialog>
-                <a href="https://codepen.io/keithjgrant/pen/eyMMVL">referencia1</a>
-                <a href="https://css-tricks.com/some-hands-on-with-the-html-dialog-element/">Dialog</a>
-                <a href="https://css-tricks.com/a-css-approach-to-trap-focus-inside-of-an-element/">Focus</a>
-            </article>
-            <article class="--fx1 --ctr">
-                <details>
-                    <summary>Epcot Center</summary>
-                    <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
-                </details>
-            </article>
-
-            <article class="--fx1 --col --ctr">
-                <h1>The output element</h1>
-                <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
-                    <input type="range" id="a" value="50">
-                    +<input type="number" id="b" value="25">
-                    =<output name="x" for="a b"></output>
-                </form>
-                <p><strong>Note:</strong> The output element is not supported in Edge 12 (or earlier).</p>
-            </article>
-
-        </section>
-
-        <section class="--fx1 --col">
-
-            <article class="--fx1 --col --ctr">
-                <h3>¡IMPORTANTE!</h3>
-                <h3>Recuerda que los archivos 'index.html' y 'main.css' deben estar en la misma carpeta.</h3>
-                <!-- MÁS ADELANTE
-                <h3>Recuerda poner el archivo 'main.css' dentro de la carpetas correspondientes: 'assets/css/main.css'.</h3>
-                <h3>Otra alternativa es cambiar la ruta del archivo dentro de 'index.html' como se indica.*</h3>
-                -->
-                <a href="main.css" download="">Descargar CSS</a>
-            </article>
-
-            <article class="--fx1 --ctr">
-                <!-- IMG MAP, INTERESTING -->
-                <img src="assets/img/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
-                <map name="workmap">
-                    <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://www.w3schools.com/TAgs/computer.htm">
-                    <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://www.w3schools.com/TAgs/phone.htm">
-                    <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="https://www.w3schools.com/TAgs/coffee.htm">
-                </map>
-            </article>
-
-            <article class="--fx1 --ctr">
-                <picture>
-                    <source media="(min-width:650px)" srcset="https://www.w3schools.com/TAgs/img_orange_flowers.jpg">
-                    <source media="(min-width:465px)" srcset="https://www.w3schools.com/TAgs/img_orange_flowers.jpg">
-                    <img src="https://www.w3schools.com/TAgs/img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
-                  </picture>
-            </article>
-
-            <article class="--fx1 --ctr">
-                <a href="https://medium.com/design-code-repository/html-elements-section-vs-div-vs-article-a8c34e6548cf">
-                    Diferencia entre sección, div y artículo
-                </a>
-            </article>
-
-            <article class="--fx1">
-                <p class="--fx1">
-                    The wbr (Word Break Opportunity) tag specifies where in a text it would be ok to add a line-break.
-                </p>
-                <p class="--fx1">
-                    This is a veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryvery<wbr>verylongwordthatwillbreakatspecific<wbr>placeswhenthebrowserwindowisresized.
-                </p>
-            </article>
+                <article class="--fx1 --ctr">
+                    <!-- KEYBOARD DISPLAY-->
+                    <kbd>Hola</kbd>
+                </article>
     
-            <article class="--fx1 --col --ctr">
-                Use template to hold some content that will be hidden when the page loads. Use JavaScript to display it:
-                <h1>The template Element</h1>
-                <p>Click the button below to display the hidden content from the template element.</p>
-                <button onclick="showContent()">Show hidden content</button>
-                <template>
-                    <h2>Flower</h2>
-                    <img src="https://www.w3schools.com/TAgs/img_orange_flowers.jpg" width="214" height="204">
-                </template>
-                <script>
-                function showContent() {
-                    var temp = document.getElementsByTagName("template")[0];
-                    var clon = temp.content.cloneNode(true);
-                    document.body.appendChild(clon);
-                }
-                </script>
-            </article>
+                <article class="--fx1 --ctr">
+                    <!-- FILES -->
+                    <nav>
+                        <a href="/html/">HTML</a> |
+                        <a href="/css/">CSS</a> |
+                        <a href="/js/">JavaScript</a> |
+                        <a href="/python/">Python</a>
+                    </nav>
+                </article>
     
-            <article class="--fx1 --col --ctr">
-                <h1>The optgroup element</h1>
-                <p>The optgroup tag is used to group related options in a drop-down list:</p>
-                <form>
-                  <label for="cars">Choose a car:</label>
-                  <select name="cars" id="cars">
-                    <optgroup label="Swedish Cars">
-                      <option value="volvo">Volvo</option>
-                      <option value="saab">Saab</option>
-                    </optgroup>
-                    <optgroup label="German Cars">
-                      <option value="mercedes">Mercedes</option>
-                      <option value="audi">Audi</option>
-                    </optgroup>
-                  </select>
-                </form>
-            </article>
+                <article class="--fx1 --ctr">
+                    <!-- OBJECT AUTOPLAY -->
+                    <object data="assets/horse.wav">
+                        <param name="autoplay" value="true">
+                    </object>
+                </article>
+                            
+                <article class="--fx1 --ctr">
+                    <!-- NOSCRIPT -->
+                    <script>
+                        document.write("Hello World!")
+                    </script>
+                    <noscript>Your browser does not support JavaScript!</noscript>
+                </article>
     
-        </section>
+                <article class="--fx1 --col --ctr">
+                    <!-- PROGRESS BAR -->
+                    <label for="file">Downloading progress:
+                        <progress id="file" value="32" max="100"> 32% </progress>
+                    </label>
+                    <label for="disk_c">Disk usage C:
+                        <meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter><br>
+                    </label>
+                    <label for="disk_d">Disk usage D:
+                        <meter id="disk_d" value="0.6">60%</meter>
+                    </label>
+                </article>
+        
+                <article class="--fx1 --ctr">
+                    <h1>The samp element</h1>
+                    <p>Message from my computer:</p>
+                    <p><samp>File not found.<br>Press F1 to continue</samp></p>
+                </article>
+    
+                <article class="--fx1 --col --ctr">
+                    The dialog tag defines a dialog box or subwindow.
+                    The dialog element makes it easy to create popup dialogs and modals on a web page.
+                    <dialog open>This is an open dialog window</dialog>
+                    <a href="https://codepen.io/keithjgrant/pen/eyMMVL">referencia1</a>
+                    <a href="https://css-tricks.com/some-hands-on-with-the-html-dialog-element/">Dialog</a>
+                    <a href="https://css-tricks.com/a-css-approach-to-trap-focus-inside-of-an-element/">Focus</a>
+                </article>
+                <article class="--fx1 --ctr">
+                    <details>
+                        <summary>Epcot Center</summary>
+                        <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+                    </details>
+                </article>
+    
+                <article class="--fx1 --col --ctr">
+                    <h1>The output element</h1>
+                    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                        <input type="range" id="a" value="50">
+                        +<input type="number" id="b" value="25">
+                        =<output name="x" for="a b"></output>
+                    </form>
+                    <p><strong>Note:</strong> The output element is not supported in Edge 12 (or earlier).</p>
+                </article>
+    
+            </section>
+    
+            <section class="--fx1 --col">
+    
+                <article class="--fx1 --col --ctr">
+                    <h3>¡IMPORTANTE!</h3>
+                    <h3>Recuerda que los archivos 'index.html' y 'main.css' deben estar en la misma carpeta.</h3>
+                    <!-- MÁS ADELANTE
+                    <h3>Recuerda poner el archivo 'main.css' dentro de la carpetas correspondientes: 'assets/css/main.css'.</h3>
+                    <h3>Otra alternativa es cambiar la ruta del archivo dentro de 'index.html' como se indica.*</h3>
+                    -->
+                    <a href="main.css" download="">Descargar CSS</a>
+                </article>
+    
+                <article class="--fx1 --ctr">
+                    <!-- IMG MAP, INTERESTING -->
+                    <img src="assets/img/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+                    <map name="workmap">
+                        <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://www.w3schools.com/TAgs/computer.htm">
+                        <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://www.w3schools.com/TAgs/phone.htm">
+                        <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="https://www.w3schools.com/TAgs/coffee.htm">
+                    </map>
+                </article>
+    
+                <article class="--fx1 --ctr">
+                    <picture>
+                        <source media="(min-width:650px)" srcset="https://www.w3schools.com/TAgs/img_orange_flowers.jpg">
+                        <source media="(min-width:465px)" srcset="https://www.w3schools.com/TAgs/img_orange_flowers.jpg">
+                        <img src="https://www.w3schools.com/TAgs/img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+                      </picture>
+                </article>
+    
+                <article class="--fx1 --ctr">
+                    <a href="https://medium.com/design-code-repository/html-elements-section-vs-div-vs-article-a8c34e6548cf">
+                        Diferencia entre sección, div y artículo
+                    </a>
+                </article>
+    
+                <article class="--fx1">
+                    <p class="--fx1">
+                        The wbr (Word Break Opportunity) tag specifies where in a text it would be ok to add a line-break.
+                    </p>
+                    <p class="--fx1">
+                        This is a veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryvery<wbr>verylongwordthatwillbreakatspecific<wbr>placeswhenthebrowserwindowisresized.
+                    </p>
+                </article>
+        
+                <article class="--fx1 --col --ctr">
+                    Use template to hold some content that will be hidden when the page loads. Use JavaScript to display it:
+                    <h1>The template Element</h1>
+                    <p>Click the button below to display the hidden content from the template element.</p>
+                    <button onclick="showContent()">Show hidden content</button>
+                    <template>
+                        <h2>Flower</h2>
+                        <img src="https://www.w3schools.com/TAgs/img_orange_flowers.jpg" width="214" height="204">
+                    </template>
+                    <script>
+                    function showContent() {
+                        var temp = document.getElementsByTagName("template")[0];
+                        var clon = temp.content.cloneNode(true);
+                        document.body.appendChild(clon);
+                    }
+                    </script>
+                </article>
+        
+                <article class="--fx1 --col --ctr">
+                    <h1>The optgroup element</h1>
+                    <p>The optgroup tag is used to group related options in a drop-down list:</p>
+                    <form>
+                      <label for="cars">Choose a car:</label>
+                      <select name="cars" id="cars">
+                        <optgroup label="Swedish Cars">
+                          <option value="volvo">Volvo</option>
+                          <option value="saab">Saab</option>
+                        </optgroup>
+                        <optgroup label="German Cars">
+                          <option value="mercedes">Mercedes</option>
+                          <option value="audi">Audi</option>
+                        </optgroup>
+                      </select>
+                    </form>
+                </article>
+        
+            </section>
 
-    </main>
+        </main>
+
+    </div>
 
 </body>
 </html>

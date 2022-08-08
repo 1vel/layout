@@ -27,6 +27,7 @@ a {
     text-decoration-line: none;
 }
 
+
 /*** FLEX ***/
 /* FLEX DISPLAY */
 .--fx {
@@ -88,15 +89,20 @@ a {
 }
 
 #wrapper {
-    background-color: #272727;
+    background-color: rgb(15, 15, 15);
 }
 
 header {
     padding: 10px;
 }
 main {
-    background: black;
+    background: #272727;
 }
 footer {
     padding: 10px;
+}
+
+
+article {
+    outline: 1px solid lightgreen;
 }
