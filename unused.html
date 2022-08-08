@@ -13,15 +13,53 @@
     <main id="wrapper" class="--fx1">
 
         <section class="--fx1 --col">
-
+            
             <article class="--fx1 --col --ctr">
                 <a href="index.html">Atrás</a>
                 <a href="index.html" download="">Descargar HTML</a>
             </article>
 
             <article class="--fx1 --ctr">
-                <label for="file">Downloading progress:</label>
-                <progress id="file" value="32" max="100"> 32% </progress>
+                <!-- KEYBOARD DISPLAY-->
+                <kbd>Hola</kbd>
+            </article>
+
+            <article class="--fx1 --ctr">
+                <!-- FILES -->
+                <nav>
+                    <a href="/html/">HTML</a> |
+                    <a href="/css/">CSS</a> |
+                    <a href="/js/">JavaScript</a> |
+                    <a href="/python/">Python</a>
+                </nav>
+            </article>
+
+            <article class="--fx1 --ctr">
+                <!-- OBJECT AUTOPLAY -->
+                <object data="assets/horse.wav">
+                    <param name="autoplay" value="true">
+                </object>
+            </article>
+                        
+            <article class="--fx1 --ctr">
+                <!-- NOSCRIPT -->
+                <script>
+                    document.write("Hello World!")
+                </script>
+                <noscript>Your browser does not support JavaScript!</noscript>
+            </article>
+
+            <article class="--fx1 --col --ctr">
+                <!-- PROGRESS BAR -->
+                <label for="file">Downloading progress:
+                    <progress id="file" value="32" max="100"> 32% </progress>
+                </label>
+                <label for="disk_c">Disk usage C:
+                    <meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter><br>
+                </label>
+                <label for="disk_d">Disk usage D:
+                    <meter id="disk_d" value="0.6">60%</meter>
+                </label>
             </article>
     
             <article class="--fx1 --ctr">
@@ -67,6 +105,16 @@
                 <h3>Otra alternativa es cambiar la ruta del archivo dentro de 'index.html' como se indica.*</h3>
                 -->
                 <a href="main.css" download="">Descargar CSS</a>
+            </article>
+
+            <article class="--fx1 --ctr">
+                <!-- IMG MAP, INTERESTING -->
+                <img src="assets/img/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+                <map name="workmap">
+                    <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://www.w3schools.com/TAgs/computer.htm">
+                    <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://www.w3schools.com/TAgs/phone.htm">
+                    <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="https://www.w3schools.com/TAgs/coffee.htm">
+                </map>
             </article>
 
             <article class="--fx1 --ctr">
