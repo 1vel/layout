@@ -104,6 +104,17 @@ main {
 }
 footer {
 }
+/***** COMPUTER *****/
+@media screen and (orientation:landscape) {
+    main {
+    }
+}
+MOBILE *****/
+@media screen and (orientation:portrait) {
+    main {
+        display: none;
+    }
+}
 
 /* PADDING */
 .--pad5 {
