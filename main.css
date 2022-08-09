@@ -112,7 +112,7 @@ footer {
 /***** MOBILE *****/
 @media screen and (orientation:portrait) {
     main {
-        display: none;
+        display: none!important;
     }
 }
 
