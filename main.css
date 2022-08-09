@@ -87,21 +87,57 @@ a {
 .--hctr {
     justify-content: center;
 }
+/* TEXT CENTER */
+.--tctr {
+    text-align: center;
+}
 
 #wrapper {
     background-color: rgb(15, 15, 15);
 }
 
 header {
-    padding: 10px;
-}
-main {
     background: #272727;
 }
+main {
+    background: lightslategray;
+}
 footer {
-    padding: 10px;
 }
 
+/* PADDING */
+.--pad5 {
+    padding: 5px;
+}
+.--pad10 {
+    padding: 10px;
+}
+.--pad15 {
+    padding: 15px;
+}
+.--pad20 {
+    padding: 20px;
+}
+.--pad25 {
+    padding: 25px;
+}
+.--pad50 {
+    padding: 50px;
+}
+
+/* LINK STYLING */
+.__link--green {
+    color: lightgreen;
+}
+.__link--green:hover {
+    color: lightseagreen;
+}
+.__link--def {
+    color: lightskyblue;
+}
+.__link--def:hover {
+    color: blue;
+}
 
 article {
     outline: 1px solid lightgreen;
