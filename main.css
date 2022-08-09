@@ -109,7 +109,7 @@ footer {
     main {
     }
 }
-MOBILE *****/
+/***** MOBILE *****/
 @media screen and (orientation:portrait) {
     main {
         display: none;
