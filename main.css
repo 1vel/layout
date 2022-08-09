@@ -139,6 +139,6 @@ footer {
     color: blue;
 }
 
-article {
+.--outline {
     outline: 1px solid lightgreen;
 }
