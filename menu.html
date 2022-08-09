@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <!---->
+    <div>
+        <details>
+          <summary>
+            Menú
+          </summary>
+          <a href="index.html" id='a1'>Inicio</a>
+          <a href="menu2.html" id='a2'>Menú alternativo</a>
+        </details>
+      </div>
+    <style>
+html {
+  display: flex;
+  height: 100%;
+}
+body {
+  flex: 1;
+  display: flex;
+}
+div {
+  flex:1;
+  display: flex;
+  background: grey;
+}
+details {
+  flex: 1;
+  display: flex;
+  background: green;
+}
+summary {
+  display: flex;
+  justify-content: flex-end;
+  height: 10%;
+}
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#a1 {
+  height: 45%;
+  flex: 1;
+  background: red;
+}
+#a2 {
+  height: 45%;
+  flex: 1;
+  background: blue;
+}
+    </style>
+</body>
+</html>

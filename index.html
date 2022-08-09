@@ -25,7 +25,27 @@
         </header>
         
         <main class="--fx5">
-            <div class="--fx-1"></div>
+            <div class="--fx5 --col">
+                <details class="--fx1">
+                    <summary class="--fx1">Epcot Center</summary>
+                    <a class="--fx1" href="">Inicio</a>
+                    <a class="--fx1" href="">Hola</a>
+                </details>
+            </div>
+
+            <style>
+                summary::-webkit-details-marker {
+                    display: none;
+                }
+                details:not([open]) > .dropdown-wrapper {
+                    display: none;
+                }
+                details[open] > .dropdown-wrapper {
+                    display: flex;
+                }
+            </style>
+
+
             <div class="--fx1 --col">
                 <div class="--fx1 ">
                     <div class="--fx1 --ctr"><h1>Hola</h1></div>
