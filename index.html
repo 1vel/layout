@@ -18,33 +18,24 @@
 <body>
     <!-- WRAPPER -->
     <div id="wrapper" class="--fx1 --col">
-    
-        <header class="--fx --col --ctr">
+
+        <noscript>
+            <header>
+                <details class="--fx --tctr --pointer">
+                    <summary class="--pad10">Menú</summary>
+                    <a class="--pad10" href="index.html">Atrás</a>
+                    <a class="--pad10" href="menu.html">Menu</a>
+                </details>
+            </header>
+        </noscript>
+
+        <header class="--js --col --ctr">
             <a class="--pad10" href="https://main.layouts.tk">Home</a>
             <a class="--pad10 __link--green" href="unused.html">Download</a>
         </header>
         
         <main class="--fx5">
-            <div class="--fx5 --col">
-                <details class="--fx1">
-                    <summary class="--fx1">Epcot Center</summary>
-                    <a class="--fx1" href="">Inicio</a>
-                    <a class="--fx1" href="">Hola</a>
-                </details>
-            </div>
-
-            <style>
-                summary::-webkit-details-marker {
-                    display: none;
-                }
-                details:not([open]) > .dropdown-wrapper {
-                    display: none;
-                }
-                details[open] > .dropdown-wrapper {
-                    display: flex;
-                }
-            </style>
-
+            <div class="--fx1"></div>
 
             <div class="--fx1 --col">
                 <div class="--fx1 ">
@@ -111,4 +102,12 @@
         </footer>
 
     </div>
+
+    <script>
+        let js = document.getElementsByClassName("--js");
+        for (let i = 0; i < js.length; i++) {
+            js[i].style.display = 'flex'
+        }
+    </script>
+
 </body>
