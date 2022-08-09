@@ -111,7 +111,7 @@ footer {
 }
 /***** MOBILE *****/
 @media screen and (orientation:portrait) {
-    main {
+    .--computer {
         display: none!important;
     }
 }
