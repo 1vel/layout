@@ -142,3 +142,19 @@ footer {
 .--outline {
     outline: 1px solid lightgreen;
 }
+
+
+.--pointer {
+    cursor: pointer;
+}
+summary::marker {
+    content: '>';
+    color: green;
+}
+details[open] > summary::marker {
+    content: '<';
+}
+
+.--js {
+    display: none;
+}
