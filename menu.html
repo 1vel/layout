@@ -8,7 +8,49 @@
 </head>
 <body>
   <!---->
-    <div>
+  <div id="aaa" onclick="toggle()"></div>
+  <div id="asd">
+    <a href="">asd</a>
+    <a href="">asd</a>
+    <a href="">asd</a>
+  </div>
+  <script>
+    toggle = () => {
+      let state = document.getElementById('asd')
+      if (state.style.display === 'none') {
+        state.style.display = 'flex'
+      } else {
+        state.style.display = 'none'
+      }
+    }
+  </script>
+  <style>
+    #aaa {
+      z-index: 2;
+      position: fixed;
+      background-color: black;
+      top: 0;
+      right: 0;
+      width: 100px;
+      height: 100px;
+    }
+    #asd {
+      z-index: 1;
+      display: none;
+      position: absolute;
+      flex-direction: column;
+      top:0;right:0;bottom:0;left:0;
+      background-color: red;
+    }
+    #asd a {
+      flex: 1;
+    }
+    #asd a:hover {
+      background-color: aqua;
+    }
+  </style>
+
+    <div id="div">
         <details>
           <summary>
             Menú
@@ -26,32 +68,32 @@ body {
   flex: 1;
   display: flex;
 }
-div {
+#div {
   flex:1;
   display: flex;
   background: grey;
 }
-details {
+#div details {
   flex: 1;
   display: flex;
   background: green;
 }
-summary {
+#div summary {
   display: flex;
   justify-content: flex-end;
   height: 10%;
 }
-a {
+#div a {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#a1 {
+#div #a1 {
   height: 45%;
   flex: 1;
   background: red;
 }
-#a2 {
+#div #a2 {
   height: 45%;
   flex: 1;
   background: blue;

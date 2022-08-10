@@ -176,6 +176,9 @@ details[open] > summary::marker {
     #toggle-menu, #phone-menu {
         display: none!important;
     }
+    #wrapper {
+        display: flex!important;
+    }
 }
 /* PERFECT PHONE MENU REWORK TO LAYOUT IN PROGRESS */
 @media screen and (orientation:portrait) {

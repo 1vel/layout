@@ -1,0 +1,121 @@
+/* BASE */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+html {
+    display: flex;
+    height: 100%;
+}
+body {
+    flex: 1;
+    display: flex;
+}
+main { flex: 1;background: cadetblue;}
+
+
+/* BUTTON */
+#toggle {
+    background-color: #272727;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border: 5px solid rgb(15, 15, 15);
+    border-radius: 50%;
+}
+#toggle:hover {
+    background: rgb(15, 15, 15);
+}
+    
+/* MENÚ */
+#menu {
+    display: none;
+    flex-direction: column;
+    background-color: #272727;
+}
+#menu a {
+    flex: 1;
+    display: flex;
+    color: white;
+    text-decoration-line: none;
+    align-items: center;
+    justify-content: center;
+}
+#menu a:hover {
+    background-color: black;
+}
+
+.block {
+    display: block!important;
+}
+/***** POSITION *****/
+.--absol {
+    position: absolute;
+}
+.--fixed {
+    position: fixed;
+}
+.--static {
+    position: static;
+}
+.--stick {
+    position: sticky;
+    position: -webkit-sticky;
+}
+/***** ABSOLUTE POSITIONING *****/
+/* ALL */
+.--pos--all {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+/* TOP */
+.--top {
+    top: 0;
+}
+.--top5 {
+    top: 5px;
+}
+.--top10 {
+    top: 10px;
+}
+/* RIGHT */
+.--right {
+    right: 0;
+}
+.--right5 {
+    right: 5px;
+}
+.--right10 {
+    right: 10px;
+}
+/* BOTTOM */
+.--bottom {
+    bottom: 0;
+}
+.--bottom5 {
+    bottom: 5px;
+}
+.--bottom10 {
+    bottom: 10px;
+}
+/* LEFT */
+.--left {
+    left: 0;
+}
+.--left5 {
+    left: 5px;
+}
+.--left10 {
+    left: 10px;
+}
+
+/* Z-INDEX */
+.--z4{
+    z-index: 4;
+}
+.--z5{
+    z-index: 5;
+}
