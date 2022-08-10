@@ -30,44 +30,44 @@ a {
 
 /*** FLEX ***/
 /* FLEX DISPLAY */
-.--fx {
+.fx {
     display: flex;
 }
 /* DISPLAY + SIZE */
-.--fx1 {
+.fx1 {
     flex: 1;
     display: flex;
 }
-.--fx2 {
+.fx2 {
     flex: 2;
     display: flex;
 }
-.--fx3 {
+.fx3 {
     flex: 3;
     display: flex;
 }
-.--fx4 {
+.fx4 {
     flex: 4;
     display: flex;
 }
-.--fx5 {
+.fx5 {
     flex: 5;
     display: flex;
 }
 /* FLEX SIZE */
-.--fx-1 {
+.fx-1 {
     flex: 1;
 }
-.--fx-2 {
+.fx-2 {
     flex: 2;
 }
-.--fx-3 {
+.fx-3 {
     flex: 3;
 }
-.--fx-4 {
+.fx-4 {
     flex: 4;
 }
-.--fx-5 {
+.fx-5 {
     flex: 5;
 }
 .--col {
@@ -168,4 +168,41 @@ details[open] > summary::marker {
 
 .--js {
     display: none;
+}
+
+@media screen and (orientation:landscape) {
+    #toggle-menu, #phone-menu {
+        display: none!important;
+    }
+}
+
+/* PERFECT PHONE MENU REWORK TO LAYOUT IN PROGRESS */
+@media screen and (orientation:portrait) {
+    #toggle-menu {
+        position: fixed;
+        top: 0;right: 0;
+        z-index: 2;
+    }
+    #menu-icon {
+        width: 45px;
+        height: 45px;
+        cursor: pointer;
+    }
+    
+    /**/
+    #phone-menu {
+        flex: 1;
+        display: none;
+        flex-direction: column;
+        z-index: 1;
+        background-color: #222222;
+    }
+    #phone-menu button {
+        flex: 1;
+        color: white;
+    }
+    #phone-menu button:hover {
+        background-color: black;
+        cursor: pointer;
+    }
 }
