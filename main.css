@@ -21,6 +21,7 @@ body {
 
 button {
     background-color: transparent;
+    font-family: 'Press Start 2P', cursive;
 }
 a {
     color: inherit;
@@ -170,14 +171,15 @@ details[open] > summary::marker {
     display: none;
 }
 
+/* OCULTAR ICONO EN PC */
 @media screen and (orientation:landscape) {
     #toggle-menu, #phone-menu {
         display: none!important;
     }
 }
-
 /* PERFECT PHONE MENU REWORK TO LAYOUT IN PROGRESS */
 @media screen and (orientation:portrait) {
+    /* ICONO */
     #toggle-menu {
         position: fixed;
         top: 0;right: 0;
@@ -188,8 +190,7 @@ details[open] > summary::marker {
         height: 45px;
         cursor: pointer;
     }
-    
-    /**/
+    /* MENÚ */
     #phone-menu {
         flex: 1;
         display: none;
