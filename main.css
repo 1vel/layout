@@ -239,6 +239,38 @@ footer {
 
 /* CORTE */
 
+/***** ABSOLUTE POSITION MENU *****/
+/* BUTTON */
+#absol__menu--toggle {
+    background-color: #272727;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border: 5px solid rgb(15, 15, 15);
+    border-radius: 50%;
+}
+#absol__menu--toggle:hover {
+    background: rgb(15, 15, 15);
+}
+/* MENU */
+#absol__menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #272727;
+}
+/* LINKS */
+.absol__menu--link {
+    flex: 1;
+    display: flex;
+    color: white;
+    text-decoration-line: none;
+    align-items: center;
+    justify-content: center;
+}
+.absol__menu--link:hover {
+    background-color: black;
+}
+
 /* VUELTA */
 /**********************************************************************************************/
 

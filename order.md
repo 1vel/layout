@@ -1,0 +1,8 @@
+- display / display + size
+- visibility
+- position / z-index
+- positioning / spacing
+- flex direction
+- centering
+- text property
+- 
