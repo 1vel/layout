@@ -1,5 +1,16 @@
-/* FONT FAMILY */
-body, button { font-family: 'Press Start 2P', cursive; }
+/***** SYSTEM *****/
+/* MOUSE */
+.--pointer {
+    cursor: pointer;
+}
+/* NOSCRIPT */
+.--js {
+    display: none;
+}
+/* DESIGN LIMITS */
+.--outline {
+    outline: 1px solid lightgreen;
+}
 
 /***** RESETING *****/
 * {
@@ -16,19 +27,19 @@ body, button { font-family: 'Press Start 2P', cursive; }
     color: inherit;
     text-decoration-line: none;
 }
+/* FULL SCREEN */
 html {
-    /* FULL SCREEN */
     display: flex;
     height: 100%;
 }
 body {
-    /* FULL SCREEN */
     flex: 1;
     display: flex;
 }
+/* FONT FAMILY */
+body, button { font-family: 'Press Start 2P', cursive; }
 
-
-/***** DISPLAY AND VISIBILITY *****/
+/***** DISPLAY | VISIBILITY *****/
 .fx { display: flex; display: -webkit-flex; }
 .none { display: none; }
 .hidden { visibility:  hidden; }
@@ -64,7 +75,7 @@ body {
 .--z9 { z-index: 9; }
 .--z10 { z-index: 10; }
 
-/***** ABSOLUTE POSITIONING AND SPACING *****/
+/***** ABSOLUTE POSITION AND SPACING *****/
 /* ALL */
 .--pos--all { inset: 0; }
 .--pos--all5 { inset: 5px; }
@@ -191,7 +202,7 @@ body {
 /***** PAGE *****/
 /* CONTAINER */
 #wrapper {
-    background-color: rgb(15, 15, 15);
+    background-color: cadetblue;
 }
 /* HEADER */
 header {
@@ -208,50 +219,29 @@ footer {
 
 /**********************************************************************************************/
 
+/* CORTE */
+
+/********** RESPONSIVE DESIGN **********
 /***** COMPUTER *****/
 @media screen and (orientation:landscape) {
     .--phone {
         display: none!important;
     }
 }
-/***** MOBILE *****/
+/***** PHONE *****/
 @media screen and (orientation:portrait) {
     .--computer {
         display: none!important;
     }
 }
 
+/* VUELTA */
 
+/* CORTE */
 
-/* LINK STYLING */
-.__link--green {
-    color: lightgreen;
-}
-.__link--green:hover {
-    color: lightseagreen;
-}
-.__link--def {
-    color: lightskyblue;
-}
-.__link--def:hover {
-    color: blue;
-}
+/* VUELTA */
+/**********************************************************************************************/
 
-
-
-.--pointer {
-    cursor: pointer;
-}
-summary::marker {
-    content: '>';
-    color: green;
-}
-details[open] > summary::marker {
-    content: '<';
-}
-.--js {
-    display: none;
-}
 
 
 /* OCULTAR ICONO EN PC */
@@ -295,6 +285,25 @@ details[open] > summary::marker {
 }
 
 
-.--outline {
-    outline: 1px solid lightgreen;
+/* LINK STYLING */
+.__link--green {
+    color: lightgreen;
+}
+.__link--green:hover {
+    color: lightseagreen;
+}
+.__link--def {
+    color: lightskyblue;
+}
+.__link--def:hover {
+    color: blue;
+}
+
+
+summary::marker {
+    content: '>';
+    color: green;
+}
+details[open] > summary::marker {
+    content: '<';
 }
