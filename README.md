@@ -10,10 +10,10 @@ These are some of my other "structure layouts", just mere samples of how to buil
 - https://layouts.tk
 
 <!--
-- display / display + size
+- display / js | display + size | size
 - visibility
-- position / z-index
-- positioning / spacing
+- position type | z-index
+- inset | spacing
 - flex direction
 - centering
 - text property

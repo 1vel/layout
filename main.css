@@ -51,7 +51,7 @@ body, button { font-family: 'Press Start 2P', cursive; }
 .--static { position: static; }
 .--stick { position: sticky; position: -webkit-sticky; }
 
-/***** Z-INDEX *****/
+/***** Z-INDEX | 21 Layers *****/
 /* BACK LAYERS */
 .--z-10 { z-index: -10; }
 .--z-9 { z-index: -9; }
@@ -75,7 +75,7 @@ body, button { font-family: 'Press Start 2P', cursive; }
 .--z9 { z-index: 9; }
 .--z10 { z-index: 10; }
 
-/***** ABSOLUTE POSITION AND SPACING *****/
+/***** INSET AND SPACING *****/
 /* ALL */
 .--pos--all { inset: 0; }
 .--pos--all5 { inset: 5px; }
@@ -86,7 +86,7 @@ body, button { font-family: 'Press Start 2P', cursive; }
 .--pos--all50 { inset: 50px; }
 .--pos--all75 { inset: 75px; }
 .--pos--all100 { inset: 100px; }
-/* TOP 0-50 */
+/* TOP */
 .--top { top: 0; }
 .--top5 { top: 5px; }
 .--top10 { top: 10px; }
