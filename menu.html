@@ -5,99 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <!---->
-  <div id="aaa" onclick="toggle()"></div>
-  <div id="asd">
-    <a href="">asd</a>
-    <a href="">asd</a>
-    <a href="">asd</a>
-  </div>
-  <script>
-    toggle = () => {
-      let state = document.getElementById('asd')
-      if (state.style.display === 'none') {
-        state.style.display = 'flex'
-      } else {
-        state.style.display = 'none'
-      }
-    }
-  </script>
-  <style>
-    #aaa {
-      z-index: 2;
-      position: fixed;
-      background-color: black;
-      top: 0;
-      right: 0;
-      width: 100px;
-      height: 100px;
-    }
-    #asd {
-      z-index: 1;
-      display: none;
-      position: absolute;
-      flex-direction: column;
-      top:0;right:0;bottom:0;left:0;
-      background-color: red;
-    }
-    #asd a {
-      flex: 1;
-    }
-    #asd a:hover {
-      background-color: aqua;
-    }
-  </style>
 
-    <div id="div">
-        <details>
-          <summary>
-            Menú
-          </summary>
-          <a href="index.html" id='a1'>Inicio</a>
-          <a href="menu2.html" id='a2'>Menú alternativo</a>
-        </details>
-      </div>
+  <div id="wrapper" class="fx1 --col">
+
+    <!--
+    <header>
+      <details>
+        <summary>
+          Menú
+        </summary>
+        <a href="index.html" id='a1'>Inicio</a>
+        <a href="menu2.html" id='a2'>Menú alternativo</a>
+      </details>
+    </header>-->
     <style>
-html {
-  display: flex;
-  height: 100%;
-}
-body {
-  flex: 1;
-  display: flex;
-}
-#div {
-  flex:1;
-  display: flex;
-  background: grey;
-}
-#div details {
-  flex: 1;
-  display: flex;
-  background: green;
-}
-#div summary {
-  display: flex;
-  justify-content: flex-end;
-  height: 10%;
-}
-#div a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#div #a1 {
-  height: 45%;
-  flex: 1;
-  background: red;
-}
-#div #a2 {
-  height: 45%;
-  flex: 1;
-  background: blue;
-}
+      details .absol__menu--link {
+        height: 50%;
+      }
     </style>
+
+
+    <details id="absol__menu" class="--absol --z4 --pos--all">
+      <summary id="absol__menu--toggle" class="visible --fixed --z5 --top10 --right10"></summary>
+      <a class="absol__menu--link" href="index.html"><h2>Inicio</h2></a>
+      <a class="absol__menu--link" href="menu2.html"><h2>Menú alternativo</h2></a>
+    </details>
+
+
+    <main class="fx1"></main>
+    <footer>a</footer>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+        
 </body>
 </html>

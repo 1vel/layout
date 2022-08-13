@@ -256,7 +256,6 @@ footer {
 #absol__menu {
     display: flex;
     flex-direction: column;
-    background-color: #272727;
 }
 /* LINKS */
 .absol__menu--link {
@@ -266,6 +265,7 @@ footer {
     text-decoration-line: none;
     align-items: center;
     justify-content: center;
+    background-color: #272727;
 }
 .absol__menu--link:hover {
     background-color: black;
@@ -333,11 +333,11 @@ footer {
 
 
 summary::marker {
-    content: '>';
+    content: url('assets/icon/menu.svg');
     color: green;
 }
 details[open] > summary::marker {
-    content: '<';
+    content: url('assets/icon/closemenu.svg');
 }
 
 
