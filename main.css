@@ -339,3 +339,21 @@ summary::marker {
 details[open] > summary::marker {
     content: '<';
 }
+
+
+
+
+
+.pages {
+    display: none;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+}
+.pages:first-child {
+    display: flex;
+    align-items: unset;
+    justify-content: unset;
+    background-color: unset;
+}

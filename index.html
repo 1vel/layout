@@ -18,40 +18,23 @@
 <body class="font--white">
     <script src="toggle.js"></script>
     
-    <!-- MENÚ 
-    <div id="absol__menu" class="hidden --absol --z4 --pos--all">
-         TOGGLE --><!--
-        <img id="absol__menu--toggle" class="visible --fixed --z5 --top10 --right10" onclick="toggle()" src="assets/icon/menu.svg" alt="menu-icon">
-        <a class="absol__menu--link" href="#1"><h1>asd</h1></a>
-        <a class="absol__menu--link" href="#2"><h1>asd</h1></a>
-        <a class="absol__menu--link" href="#4"><h1>asd</h1></a>
-        <a class="absol__menu--link" href="#3"><h1>asd</h1></a>
-    </div>
-    -->
-    <!-- MULTIPLE PAGES -->
+    <!-- TOGGLE -->
+    <!-- MULTIPAGE MENU 
     <div id="absol__menu" class="hidden --absol --z4 --pos--all">
         <img id="absol__menu--toggle" class="visible --fixed --z5 --top10 --right10" onclick="toggle()" src="assets/icon/menu.svg" alt="menu-icon">
-        <a class="absol__menu--link" href="#1"><h2>Inicio</h2></a>
-        <a class="absol__menu--link" href="menu"><h2>Carta</h2></a>
-        <a class="absol__menu--link" href="menu.html"><h2>Contacto</h2></a>
-    </div>
+        <a class="absol__menu--link" href="home"><h2>Home</h2></a>
+        <a class="absol__menu--link" href="download"><h2>Downloads</h2></a>
+    </div>-->
 
-    <!-- UNIPAGE --><!--
+    <!-- UNIPAGE MENU -->
     <div id="absol__menu" class="hidden --absol --z4 --pos--all">
-       <img id="absol__menu--toggle" class="visible --fixed --z5 --top10 --right10" onclick="toggle()" src="assets/icon/menu.svg" alt="menu-icon">
-       <a class="absol__menu--link" href="#1"><h2>Inicio</h2></a>
-       <a class="absol__menu--link" href="#" onclick="console.log('asd')" ><h2>Carta</h2></a>
-       <a class="absol__menu--link" href="#3"><h2>Contacto</h2></a>
-   </div>-->
-
-    <div id="toggle-menu" class="--js">
-        <img id="menu-icon" src="assets/icon/menu.svg" onclick="loadMenu()" alt="toggle-button">
+       <img id="absol__menu--toggle" class="--js visible --fixed --z5 --top10 --right10" onclick="toggle()" src="assets/icon/menu.svg" alt="menu-icon">
+       <a class="absol__menu--link" href="#home" onclick="loadPage('home')"><h2>Home</h2></a>
+       <a class="absol__menu--link" href="#load" onclick="loadPage('load')"><h2>Load</h2></a>
+       <a class="absol__menu--link" href="#save" onclick="loadPage('save')"><h2>Save</h2></a>
+       <a class="absol__menu--link" href="#exit" onclick="loadPage('exit')"><h2>Exit</h2></a>
     </div>
-    <nav id="phone-menu">
-        <button onclick="asd('inicio');loadMenu()"><h2>Inicio</h2></button>
-        <button onclick="asd('carta');loadMenu()"><h2>Carta</h2></button>
-        <button onclick="asd('contacto');loadMenu()"><h2>Contacto</h2></button>
-    </nav>
+    
     <!-- WRAPPER -->
     <div id="wrapper" class="fx1 --col">
 
@@ -69,10 +52,11 @@
             <a class="--pad10" href="https://main.layouts.tk">Home</a>
             <a class="--pad10 __link--green" href="unused.html">Download</a>
         </header>
-        <script src="assets/js/main.js"></script>
         
         <main class="fx5">
-            <section class="fx1 --computer">
+
+            <section id="home" class="pages fx-1 --computer">
+                
                 <div class="fx1"></div>
 
                 <div class="fx1 --col">
@@ -134,6 +118,11 @@
                 <div class="fx-1"></div>
 
             </section>
+
+            <section id="load" class="pages fx-1 --computer">Load</section>
+            <section id="save" class="pages fx-1 --computer">Save</section>
+            <section id="exit" class="pages fx-1 --computer">Exit</section>
+
         </main>
 
         <footer class="fx --pad10">
@@ -142,11 +131,6 @@
 
     </div>
 
-    <script>
-        let js = document.getElementsByClassName("--js");
-        for (let i = 0; i < js.length; i++) {
-            js[i].style.display = 'flex'
-        }
-    </script>
+    <script src="assets/js/main.js"></script>
 
 </body>
