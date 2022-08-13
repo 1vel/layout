@@ -11,44 +11,16 @@ loadPage = (page) => {
     toggle()
 }
 
-asd = (elem) => {
-    document.getElementById(elem).style.display = 'flex'
-    if (elem === 'inicio') {
-        document.getElementById('menu').style.display = 'none'
-        document.getElementById('carta').style.display = 'none'
-        document.getElementById('contacto').style.display = 'none'
-    }
-    if (elem === 'menu') {
-        document.getElementById('inicio').style.display = 'none'
-        document.getElementById('contacto').style.display = 'none'
-        document.getElementById('carta').style.display = 'none'
-    }
-    if (elem === 'carta') {
-        document.getElementById('inicio').style.display = 'none'
-        document.getElementById('menu').style.display = 'none'
-        document.getElementById('contacto').style.display = 'none'
-    }
-    if (elem === 'contacto') {
-        document.getElementById('inicio').style.display = 'none'
-        document.getElementById('menu').style.display = 'none'
-        document.getElementById('carta').style.display = 'none'
-    }
-}
-phone = false
-loadMenu = () => {
-    if (phone == false) {
-        document.getElementById("menu-icon").src = "assets/icon/closemenu.svg"
-        document.getElementById('phone-menu').style.display = "flex"
-        document.getElementById('wrapper').style.display = "none"
-        phone = true
+toggle = () => {
+    let state = document.getElementById('absol__menu').style
+    if (state.visibility === 'visible') {
+      document.getElementById('absol__menu--toggle').src = 'assets/icon/menu.svg'
+      state.visibility = 'hidden'
     } else {
-        document.getElementById("menu-icon").src = "assets/icon/menu.svg"
-        document.getElementById('wrapper').style.display = "flex"
-        document.getElementById('phone-menu').style.display = 'none'
-        phone = false
+      document.getElementById('absol__menu--toggle').src = 'assets/icon/closemenu.svg'
+      state.visibility = 'visible'
     }
 }
-
 
 // JS CHECK
 let js = document.getElementsByClassName("--js");
