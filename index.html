@@ -17,51 +17,47 @@
 </head>
 <body class="font--white">
 
-    <!-- SINGLEPAGE MENU -->
-    <details id="absol__menu" class="--absol">
-        <summary id="absol__menu--toggle" class="--z5"></summary>
-        <a class="absol__menu--link" href="index.html"><h2>Home</h2></a>
-        <a class="absol__menu--link" href="menu2.html"><h2>Load</h2></a>
-      </details><!--
-    <details id="absol__menu" class="">
-        <summary id="absol__menu--toggle" class=""></summary>
-        <a class="absol__menu--link" href="#home" onclick="loadPage('home')"><h2>Home</h2></a>
-        <a class="absol__menu--link" href="#load" onclick="loadPage('load')"><h2>Load</h2></a>
-        <a class="absol__menu--link" href="#save" onclick="loadPage('save')"><h2>Save</h2></a>
-        <a class="absol__menu--link" href="#exit" onclick="loadPage('exit')"><h2>Exit</h2></a>
+    <!-- FLOATING MENUS -->
+    <!-- SINGLEPAGE MENU --> 
+    <details id="absol__menu" class="absol__menu --absol --pos--all">
+        <summary class="absol__menu--toggle --fixed --top10 --left10 --z10"></summary>
+        <a class="absol__menu--link fx --ctr" href="#home" onclick="loadPage('home')"><h2>Home</h2></a>
+        <a class="absol__menu--link fx --ctr" href="#load" onclick="loadPage('download')"><h2>Downloads</h2></a>
     </details>
-    <!-- BLOG/MULTIPAGE MENU 
-    <details id="absol__menu" class="--absol fx1 --pos--all">
-        <summary id="absol__menu--toggle" class="visible --fixed --z5 --top10 --right10"></summary>
-        <a class="absol__menu--link --ctr" href="index.html"><h2>Home</h2></a>
-        <a class="absol__menu--link fx --ctr --z4" href="menu2.html"><h2>Load</h2></a>
-        <a class="absol__menu--link fx --ctr --z4" href="menu2.html"><h2>Save</h2></a>
-        <a class="absol__menu--link fx --ctr --z4" href="#exit"><h2>Exit</h2></a>
-    </details>-->
+    <!-- BLOG/MULTIPAGE MENU -->
+    <details class="absol__menu --absol --pos--all">
+        <summary class="absol__menu--toggle --fixed --top10 --right10 --z10"></summary>
+        <a class="absol__menu--link fx --ctr" href="./"><h2>Home</h2></a>
+        <a class="absol__menu--link fx --ctr" href="unused"><h2>Downloads</h2></a>
+    </details>
     
     <!-- WRAPPER -->
-    <div id="wrapper" class="fx1 --col">
+    <div id="wrapper" class="fx1 --col --z3">
 
+        <!-- HEADER MENUS -->
+        <!-- NOSCRIPT -->
         <noscript>
             <header>
                 <details class="fx --tctr --pointer">
-                    <summary class="--pad10">Menú</summary>
-                    <a class="--pad10" href="index.html">Atrás</a>
-                    <a class="--pad10" href="menu.html">Menu</a>
+                    <summary class="--pad10">Menu</summary>
+                    <a class="--pad10" href="./">Home</a>
+                    <a class="--pad10" href="unused">Downloads</a>
                 </details>
             </header>
         </noscript>
-
+        <!-- STANDART -->
         <header class="--js --col --ctr">
-            <a class="--pad10" href="https://main.layouts.tk">Home</a>
-            <a class="--pad10 __link--green" href="unused.html">Download</a>
+            <a class="--pad10" href="./">Home</a>
+            <a class="--pad10 __link--green" href="unused">Downloads</a>
         </header>
         
         <main class="fx5">
 
             <section id="home" class="pages fx-1 --computer">
                 
-                <div class="fx1"></div>
+                <div class="fx1">
+                    <a href="#123"><h1>HOLAA</h1></a>
+                </div>
 
                 <div class="fx1 --col">
                     <div class="fx1 ">
@@ -124,7 +120,7 @@
             </section>
 
             <section id="load" class="pages fx-1">Load</section>
-            <section id="save" class="pages fx-1">Save</section>
+            <section id="save" class="pages fx1"></section>
             <section id="exit" class="pages fx-1">Exit</section>
 
         </main>

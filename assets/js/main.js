@@ -8,18 +8,7 @@ loadPage = (page) => {
         }
     }
     document.getElementById(page).style.display = 'flex'
-    toggle()
-}
-
-toggle = () => {
-    let state = document.getElementById('absol__menus').style
-    if (state.visibility === 'visible') {
-      document.getElementById('absol__menu--toggles').src = 'assets/icon/menu.svg'
-      state.visibility = 'hidden'
-    } else {
-      document.getElementById('absol__menu--toggles').src = 'assets/icon/closemenu.svg'
-      state.visibility = 'visible'
-    }
+    document.getElementById('absol__menu').open = false
 }
 
 // JS CHECK
