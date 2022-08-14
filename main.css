@@ -261,6 +261,7 @@ details[open]#absol__menu > summary::marker {
 }
 /* LINKS */
 .absol__menu--link {
+    display: flex;
     background-color: #272727;
     height: 25%;
 }
