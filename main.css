@@ -259,13 +259,9 @@ footer {
 details[open]#absol__menu > summary::marker {
     content: url('assets/icon/closemenu.svg');
 }
-/* MENU */
 /* LINKS */
 .absol__menu--link {
     background-color: #272727;
-}
-/* DETAILS MENU */
-.absol__menu--link {
     height: 25%;
 }
 .absol__menu--link:hover {
