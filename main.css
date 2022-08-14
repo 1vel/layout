@@ -239,10 +239,43 @@ footer {
 
 /* CORTE */
 
-
+#absol__menu {
+    position: absolute;
+    inset: 0;
+    background-color: aquamarine;
+  }
+  /* BUTTON */
+  #absol__menu--toggle {
+    position: fixed;
+      width: 70px;
+      height: 70px;
+      border: 5px solid rgb(15, 15, 15);
+      border-radius: 50%;
+      background-color: #272727;
+  }
+  #absol__menu--toggle::marker {
+      content: url('assets/icon/menu.svg');
+  }
+  #absol__menu--toggle:hover {
+      background: rgb(15, 15, 15);
+  }
+  details[open]#absol__menu > summary::marker {
+      content: url('assets/icon/closemenu.svg');
+  }
+  /* LINKS */
+  .absol__menu--link {
+    display: flex;
+    background-color: #272727;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+  }
+  .absol__menu--link:hover {
+      background-color: black;
+  }
 
 /***** ABSOLUTE POSITION MENU *****/
-/* BUTTON */
+/* BUTTON 
 #absol__menu--toggle {
     width: 70px;
     height: 70px;
@@ -259,7 +292,7 @@ footer {
 details[open]#absol__menu > summary::marker {
     content: url('assets/icon/closemenu.svg');
 }
-/* LINKS */
+/* LINKS 
 .absol__menu--link {
     display: flex;
     background-color: #272727;
