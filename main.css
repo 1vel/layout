@@ -252,7 +252,7 @@ details[open].absol__menu {
 /* LINKS */
 .absol__menu--link {
     background-color: #272727;
-    height: 25%;
+    height: 50%;
 }
 .absol__menu--link:hover {
     background-color: black;
