@@ -239,33 +239,34 @@ footer {
 
 /* CORTE */
 
+
+
 /***** ABSOLUTE POSITION MENU *****/
 /* BUTTON */
 #absol__menu--toggle {
-    background-color: #272727;
-    width: 50px;
-    height: 50px;
-    padding: 5px;
+    width: 70px;
+    height: 70px;
     border: 5px solid rgb(15, 15, 15);
     border-radius: 50%;
+    background-color: #272727;
+}
+#absol__menu--toggle::marker {
+    content: url('assets/icon/menu.svg');
 }
 #absol__menu--toggle:hover {
     background: rgb(15, 15, 15);
 }
-/* MENU */
-#absol__menu {
-    display: flex;
-    flex-direction: column;
+details[open]#absol__menu > summary::marker {
+    content: url('assets/icon/closemenu.svg');
 }
+/* MENU */
 /* LINKS */
 .absol__menu--link {
-    flex: 1;
-    display: flex;
-    color: white;
-    text-decoration-line: none;
-    align-items: center;
-    justify-content: center;
     background-color: #272727;
+}
+/* DETAILS MENU */
+.absol__menu--link {
+    height: 25%;
 }
 .absol__menu--link:hover {
     background-color: black;
@@ -274,47 +275,6 @@ footer {
 /* VUELTA */
 /**********************************************************************************************/
 
-
-
-/* OCULTAR ICONO EN PC */
-@media screen and (orientation:landscape) {
-    #toggle-menu, #phone-menu {
-        display: none!important;
-    }
-    #wrapper {
-        display: flex!important;
-    }
-}
-/* PERFECT PHONE MENU REWORK TO LAYOUT IN PROGRESS */
-@media screen and (orientation:portrait) {
-    /* ICONO */
-    #toggle-menu {
-        position: fixed;
-        top: 0;right: 0;
-        z-index: 2;
-    }
-    #menu-icon {
-        width: 45px;
-        height: 45px;
-        cursor: pointer;
-    }
-    /* MENÚ */
-    #phone-menu {
-        flex: 1;
-        display: none;
-        flex-direction: column;
-        z-index: 1;
-        background-color: #222222;
-    }
-    #phone-menu button {
-        flex: 1;
-        color: white;
-    }
-    #phone-menu button:hover {
-        background-color: black;
-        cursor: pointer;
-    }
-}
 
 
 /* LINK STYLING */
@@ -332,15 +292,14 @@ footer {
 }
 
 
+/* DETAILS */
 summary::marker {
-    content: url('assets/icon/menu.svg');
+    content: '>';
     color: green;
 }
 details[open] > summary::marker {
-    content: url('assets/icon/closemenu.svg');
+    content: '<';
 }
-
-
 
 
 

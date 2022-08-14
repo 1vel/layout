@@ -17,24 +17,25 @@
 </head>
 <body class="font--white">
 
-    <!-- MULTIPAGE MENU 
-    <div id="absol__menu" class="hidden --absol --z4 --pos--all">
-        <img id="absol__menu--toggle" class="visible --fixed --z5 --top10 --right10" onclick="toggle()" src="assets/icon/menu.svg" alt="menu-icon">
-        <a class="absol__menu--link" href="home"><h2>Home</h2></a>
-        <a class="absol__menu--link" href="download"><h2>Downloads</h2></a>
-    </div>-->
-
-    <!-- UNIPAGE MENU -->
-    <div id="absol__menu" class="hidden --absol --z4 --pos--all">
-       <img id="absol__menu--toggle" class="--js visible --fixed --z5 --top10 --right10" onclick="toggle()" src="assets/icon/menu.svg" alt="menu-icon">
-       <a class="absol__menu--link" href="#home" onclick="loadPage('home')"><h2>Home</h2></a>
-       <a class="absol__menu--link" href="#load" onclick="loadPage('load')"><h2>Load</h2></a>
-       <a class="absol__menu--link" href="#save" onclick="loadPage('save')"><h2>Save</h2></a>
-       <a class="absol__menu--link" href="#exit" onclick="loadPage('exit')"><h2>Exit</h2></a>
-    </div>
+    <!-- SINGLEPAGE MENU -->
+    <details id="absol__menu" class="--absol fx --pos--all">
+        <summary id="absol__menu--toggle" class="visible --fixed --z5 --top10 --left10"></summary>
+        <a class="absol__menu--link fx --ctr --z4" href="#home" onclick="loadPage('home')"><h2>Home</h2></a>
+        <a class="absol__menu--link fx --ctr --z4" href="#load" onclick="loadPage('load')"><h2>Load</h2></a>
+        <a class="absol__menu--link fx --ctr --z4" href="#save" onclick="loadPage('save')"><h2>Save</h2></a>
+        <a class="absol__menu--link fx --ctr --z4" href="#exit" onclick="loadPage('exit')"><h2>Exit</h2></a>
+    </details>
+    <!-- BLOG/MULTIPAGE MENU -->
+    <details id="absol__menu" class="--absol fx1 --pos--all">
+        <summary id="absol__menu--toggle" class="visible --fixed --z5 --top10 --right10"></summary>
+        <a class="absol__menu--link fx --ctr --z4" href="index.html"><h2>Home</h2></a>
+        <a class="absol__menu--link fx --ctr --z4" href="menu2.html"><h2>Load</h2></a>
+        <a class="absol__menu--link fx --ctr --z4" href="menu2.html"><h2>Save</h2></a>
+        <a class="absol__menu--link fx --ctr --z4" href="#exit"><h2>Exit</h2></a>
+    </details>
     
     <!-- WRAPPER -->
-    <div id="wrapper" class="fx1 --col">
+    <div id="wrapper" class="fx1 --col --z3">
 
         <noscript>
             <header>
