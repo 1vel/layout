@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
@@ -13,8 +12,6 @@
     <summary id="absol__menu--toggle" class="visible --fixed --z5 --top10 --right10"></summary>
     <a class="absol__menu--link" href="index.html"><h2>Home</h2></a>
     <a class="absol__menu--link" href="menu2.html"><h2>Load</h2></a>
-    <a class="absol__menu--link" href="menu2.html"><h2>Save</h2></a>
-    <a class="absol__menu--link" href="menu2.html"><h2>Exit</h2></a>
   </details>
 
   <div id="wrapper" class="fx1 --col">
@@ -29,3 +26,26 @@
         
 </body>
 </html>
+
+
+<style>
+* { margin: 0;border: 0;padding: 0; }html { height: 100%;display: flex; }body, #wrapper {flex: 1;display: flex;}
+#wrapper {
+  background: red;
+}
+details {
+  position: absolute;
+  inset: 0;
+  background-color: aquamarine;
+}
+summary {
+  position: fixed;
+}
+.absol__menu--link {
+  display: flex;
+  height: 50%;
+  background: black!important;
+}
+
+
+</style>
