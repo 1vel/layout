@@ -8,8 +8,8 @@
 </head>
 <body>
 
-  <details id="absol__menu" class="--absol --z4 --pos--all">
-    <summary id="absol__menu--toggle" class="visible --fixed --z5 --top10 --right10"></summary>
+  <details id="absol__menu">
+    <summary id="absol__menu--toggle"></summary>
     <a class="absol__menu--link" href="index.html"><h2>Home</h2></a>
     <a class="absol__menu--link" href="menu2.html"><h2>Load</h2></a>
   </details>
@@ -30,25 +30,16 @@
 
 <style>
 * { margin: 0;border: 0;padding: 0; }html { height: 100%;display: flex; }body, #wrapper {flex: 1;display: flex;}
-#wrapper {
-  background: red;
-}
-details {
+#wrapper { background: red; }
+
+#absol__menu {
   position: absolute;
   inset: 0;
   background-color: aquamarine;
 }
-summary {
-  position: fixed;
-}
-/*.absol__menu--link {
-  display: flex;
-  height: 50%;
-  background: black!important;
-}
-*/
 /* BUTTON */
 #absol__menu--toggle {
+  position: fixed;
     width: 70px;
     height: 70px;
     border: 5px solid rgb(15, 15, 15);

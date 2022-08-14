@@ -221,28 +221,14 @@ footer {
 
 /* CORTE */
 
-/********** RESPONSIVE DESIGN **********
-/***** COMPUTER *****/
-@media screen and (orientation:landscape) {
-    .--phone {
-        display: none!important;
-    }
-}
-/***** PHONE *****/
-@media screen and (orientation:portrait) {
-    .--computer {
-        display: none!important;
-    }
-}
+/********** RESPONSIVE DESIGN **********//***** COMPUTER *****/@media screen and (orientation:landscape) {.--phone {display: none!important;}}/***** PHONE *****/@media screen and (orientation:portrait) {.--computer {display: none!important;}}
 
 /* VUELTA */
 
 /* CORTE */
 
 #absol__menu {
-    position: absolute;
     inset: 0;
-    background-color: aquamarine;
   }
   /* BUTTON */
   #absol__menu--toggle {
