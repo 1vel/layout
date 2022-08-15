@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 73 60" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <line x1="3" x2="30" y1="2.7" y2="2.7"></line> <!--Línea superior-->
+    <line x1="3" x2="70" y1="16" y2="16"></line> <!--Líneas horizontales-->
+    <line x1="3" x2="70" y1="57" y2="57"></line>
+    <line x1="3" x2="3" y1="57" y2="2.7"></line> <!--Líneas verticales-->
+    <line x1="70" x2="70 " y1="57" y2="16.5"></line>
+    <line x1="30" x2="35" y1="2.7" y2="16"></line> <!--Línea diagonal-->
+</svg>

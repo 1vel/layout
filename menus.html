@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P|Open+Sans">
+    <title>Main Layout</title>
+    <!-- BUSCAR INFO -->
+    <meta name="description" content="Six Revisions is a blog that shares useful information about web development and design, dedicated to people who build websites."/>
+    <meta name="keywords" content="web design, web development"/>
+    <!-- SI EL ARCHIVO ESTÁ EN EL MISMO DIRECTORIO -->
+    <link rel="stylesheet" href="main.css">
+    <!-- SI EL ARCHIVO ESTÁ EN OTRO DIRECTORIO 
+    <link rel="stylesheet" href="assets/css/main.css"> -->
+</head>
+<body class="font--white">
+    <!-- FLOATING MENUS -->
+    <!-- SINGLEPAGE MENU --> 
+    <details id="absol__menu" class="absol__menu --absol --pos--all">
+        <summary class="absol__menu--toggle --fixed --top10 --left10 --z10"></summary>
+        <a class="absol__menu--link fx --ctr" href="#home" onclick="loadPage('home')"><h2>Home</h2></a>
+        <a class="absol__menu--link fx --ctr" href="#menus" onclick="loadPage('menus')"><h2>Menus</h2></a>
+        <a class="absol__menu--link fx --ctr" href="#load" onclick="loadPage('download')"><h2>Downloads</h2></a>
+    </details>
+    <!-- BLOG/MULTIPAGE MENU -->
+    <details class="absol__menu --absol --pos--all">
+        <summary class="absol__menu--toggle --fixed --top10 --right10 --z10"></summary>
+        <a class="absol__menu--link fx --ctr" href="./"><h2>Home</h2></a>
+        <a class="absol__menu--link fx --ctr" href="menus"><h2>Menus</h2></a>
+        <a class="absol__menu--link fx --ctr" href="unused"><h2>Downloads</h2></a>
+    </details>
+
+    <div id="wrapper" class="fx1 --col --z3">
+
+        <!-- STANDART -->
+        <header class="fx">
+            <a class="menu__option fx1 --ctr --pad15" href="#" onclick="loadPage('hor1')">Menu X1</a>
+            <a class="menu__option fx1 --ctr --pad15" href="#" onclick="loadPage('hor2')">Menu X2 (not ready)</a>
+            <a class="menu__option fx1 --ctr --pad15" href="#" onclick="loadPage('ver1')">Menu Y1</a>
+            <a class="menu__option fx1 --ctr --pad15" href="#" onclick="loadPage('ver2')">Menu Y2 (not ready)</a>
+        </header>
+        <main class="fx5">
+            <section id="hor1" class="pages fx-1">
+                
+                <div id="wrapper" class="fx1">
+                    <header class="fx1 --col">
+                        <a class="menu__option fx1 --ctr" href="#">Page 1</a>
+                        <a class="menu__option fx1 --ctr" href="#">Page 2</a>
+                        <a class="menu__option fx1 --ctr" href="#">Page 3</a>
+                    </header>
+                    <main class="fx5"></main>
+                    <header class="fx --col">
+                        <a class="menu__option fx1 --ctr --pad20" href="#">Page 1</a>
+                        <a class="menu__option fx1 --ctr --pad20" href="#">Page 2</a>
+                        <a class="menu__option fx1 --ctr --pad20" href="#">Page 3</a>
+                    </header>
+                </div>
+                
+            </section>
+            
+            <section id="hor2" class="pages fx-1">
+                
+                <div id="wrapper" class="fx1">
+                    <header class="fx --col">
+                        <a class="menu__option fx1 --ctr --col --padlr15" href="#">
+                            <img class="option --padb15" src="assets/icon/home.svg" alt="">
+                            <h4>Home</h4>
+                        </a>
+                        <a class="menu__option fx1 --ctr --col --padlr15" href="#">
+                            <img class="option --padb15" src="assets/icon/notes.svg" alt="">
+                            <h4>Notes</h4>
+                        </a>
+                        <a class="menu__option fx1 --ctr --col --padlr15" href="#">
+                            <img class="option --padb15" src="assets/icon/folder.svg" alt="">
+                            <h4>System</h4>
+                        </a>
+                        <a class="menu__option fx1 --ctr --col --padlr15" href="#">
+                            <img class="option" src="assets/img/asd.png" alt="">
+                            <h4>Exit</h4>
+                        </a>
+                    </header>
+                    <main class="fx5"></main>
+                    <header class="fx --col">
+                        <a class="menu__option fx1 --ctr --pad20" href="#">Page 1</a>
+                        <a class="menu__option fx1 --ctr --pad20" href="#">Page 2</a>
+                        <a class="menu__option fx1 --ctr --pad20" href="#">Page 3</a>
+                    </header>
+                </div>
+            
+            </section>
+            
+            <section id="ver1" class="pages fx-1">
+
+                <div id="wrapper" class="fx1 --col">
+                    <header class="fx1">
+                        <a class="menu__option fx1 --ctr" href="#">Page 1</a>
+                        <a class="menu__option fx1 --ctr" href="#">Page 2</a>
+                        <a class="menu__option fx1 --ctr" href="#">Page 3</a>
+                    </header>
+                    <main class="fx5"></main>
+                    <header class="fx">
+                        <a class="menu__option fx1 --ctr --pad20" href="#">Page 1</a>
+                        <a class="menu__option fx1 --ctr --pad20" href="#">Page 2</a>
+                        <a class="menu__option fx1 --ctr --pad20" href="#">Page 3</a>
+                    </header>
+                </div>
+
+            </section>
+            <section id="ver2" class="pages fx-1">Exit</section>
+        </main>
+
+    </div>
+
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>

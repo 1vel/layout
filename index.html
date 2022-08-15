@@ -22,12 +22,14 @@
     <details id="absol__menu" class="absol__menu --absol --pos--all">
         <summary class="absol__menu--toggle --fixed --top10 --left10 --z10"></summary>
         <a class="absol__menu--link fx --ctr" href="#home" onclick="loadPage('home')"><h2>Home</h2></a>
+        <a class="absol__menu--link fx --ctr" href="#menus" onclick="loadPage('menus')"><h2>Menus</h2></a>
         <a class="absol__menu--link fx --ctr" href="#load" onclick="loadPage('download')"><h2>Downloads</h2></a>
     </details>
     <!-- BLOG/MULTIPAGE MENU -->
     <details class="absol__menu --absol --pos--all">
         <summary class="absol__menu--toggle --fixed --top10 --right10 --z10"></summary>
         <a class="absol__menu--link fx --ctr" href="./"><h2>Home</h2></a>
+        <a class="absol__menu--link fx --ctr" href="menus"><h2>Menus</h2></a>
         <a class="absol__menu--link fx --ctr" href="unused"><h2>Downloads</h2></a>
     </details>
     
@@ -41,13 +43,15 @@
                 <details class="fx --tctr --pointer">
                     <summary class="--pad10">Menu</summary>
                     <a class="--pad10" href="./">Home</a>
-                    <a class="--pad10" href="unused">Downloads</a>
+                    <a class="--pad10" href="menus">Menus</a>
+                    <a class="--pad10 __link--green" href="unused">Downloads</a>
                 </details>
             </header>
         </noscript>
         <!-- STANDART -->
         <header class="--js --col --ctr">
             <a class="--pad10" href="./">Home</a>
+            <a class="--pad10" href="menus">Menus</a>
             <a class="--pad10 __link--green" href="unused">Downloads</a>
         </header>
         
@@ -116,16 +120,16 @@
                 <div class="fx1">
                     <!-- STANDART -->
                     <header class="--js fx1 --col">
-                        <a class="fx1 --ctr" href="./">Home</a>
-                        <a class="fx1 --ctr __link--green" href="unused">Downloads</a>
+                        <a class="absol__menu--link fx --ctr" href="./">Home</a>
+                        <a class="absol__menu--link fx --ctr __link--green" href="unused">Downloads</a>
                     </header>
                 </div>
 
             </section>
 
-            <section id="home" class="pages fx-1">Homºe</section>
+            <section id="home" class="pages fx-1">Home</section>
             <section id="load" class="pages fx-1">Load</section>
-            <section id="save" class="pages fx1"></section>
+            <section id="save" class="pages fx-1">Save</section>
             <section id="exit" class="pages fx-1">Exit</section>
 
         </main>
