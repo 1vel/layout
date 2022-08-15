@@ -348,6 +348,9 @@ details[open] > summary::marker {
     content: '<';
 }
 
+#absol__menu .absol__menu--link {
+    height: 25%;
+}
 
 
 .pages {
