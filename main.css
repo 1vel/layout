@@ -322,7 +322,8 @@ footer {
     height: 100%;
 }
 /* ICON */
-.menu__icon:hover { cursor: pointer;
+.menu__icon:hover { 
+    /*cursor: pointer;*/
     cursor: url('https://www.tutorialrepublic.com/lib/images/cursors/custom.gif'), url('assets/icon/closemenu.cur'), default;
  }
 .menu__icon::marker { content: url('assets/icon/menu.svg'); }
@@ -386,10 +387,38 @@ details[open] > summary::marker {
     display: flex;
     background-color: unset;
 }*/
-.menu__option {
+
+.flexbox {
+    flex: 1 0 0;
+    display: flex;
+    height: 0;
+}
+.flexbox > .option {
+    flex: 1;
+    /* curious, "object-fit: contain;" mantains aspect ratio, delete if you don't care about it */
     object-fit: contain;
+    height: 100%;
+    width: 100%;
 }
 
-.option {
-    max-width: 100%;
+.flexbox2 {
+    flex: 1 0 0;
+    display: flex;
+    height: 0;
+    width: 100%;
 }
+.flexbox2 > .option {
+    flex: 1;
+    /* curious, "object-fit: contain;" mantains aspect ratio, delete if you don't care about it */
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+/*
+Here is where the object-fit property comes in. The object-fit property can take one of the following values:
+- fill - This is default. The image is resized to fill the given dimension. If necessary, the image will be stretched or squished to fit
+- contain - The image keeps its aspect ratio, but is resized to fit within the given dimension
+- cover - The image keeps its aspect ratio and fills the given dimension. The image will be clipped to fit
+- none - The image is not resized
+- scale-down - the image is scaled down to the smallest version of none or contain
+*/
