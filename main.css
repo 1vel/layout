@@ -333,7 +333,7 @@ details[open] > .menu__icon::marker { content: url('assets/icon/closemenu.svg');
 .menu__icon--background:hover { background: rgb(15, 15, 15); }
 /* MENU ANIMATIONS */
 .menu--to-right[open] { animation: to-right 1.5s cubic-bezier(0.165, 0.84, 0.44, 1); }
-.menu--to-left[open] { animation: to-left 1.5s cubic-bezier(0.165, 0.84, 0.44, 1); }
+.menu--to-left[open] { animation: to-bottom 1.5s cubic-bezier(0.165, 0.84, 0.44, 1); }
 
 
 
