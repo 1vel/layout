@@ -341,8 +341,10 @@ details[open] > .menu__icon::marker { content: url('assets/icon/closemenu.svg');
 
 
 /*.anim {}*/
-
-.fixed__menu--link:hover, .menu__option:hover, .menu__opt:hover {
+.menu__opt:hover {
+    background-color: black;
+}
+.menu__option:hover {
     background-color: black;
 }
 
@@ -385,28 +387,26 @@ details[open] > summary::marker {
 .pages:first-child {
     display: flex;
 }
-/*
-.pages:nth-child(2) {
-    display: flex;
-    background-color: unset;
-}*/
 
-.flexbox {
-    flex: 1 0 0;
+/***** IMAGES *****
+/* IMAGE FLEX CONTAINER*/
+.fx-img {
+    flex: 1 1 0;
     display: flex;
+    display: -webkit-flex;
     height: 0;
     width: 100%;
 }
-
-.option {
+/* IMAGE FLEX SIZE */
+.img-fsize {
     height: 100%;
     width: 100%;
 }
-
 /***** OBJECT-FIT *****/
-/* curious, "object-fit: contain;" mantains aspect ratio, delete if you don't care about it */
+/* "contain" mantains aspect ratio */
 .fit--contain { object-fit: contain; } 
-.fit--cover { object-fit: cover; } 
+.fit--cover { object-fit: cover; }
+/* "fill" is default mode */
 .fit--fill { object-fit: fill; }
 .fit--none { object-fit: none; }
 .fit--down { object-fit: scale-down; }
