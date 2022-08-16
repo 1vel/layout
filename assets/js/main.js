@@ -1,14 +1,14 @@
+/* LOAD PAGE FROM MENU */
 loadPage = (page) => {
     let pages = document.getElementsByClassName('pages')
     for (let i = 0; i < pages.length; i++) {
-        if (i === page) {
-            pages[i].style.display = 'block'
-        } else {
-            pages[i].style.display = 'none'
-        }
+        pages[i].style.display = 'none'
     }
     document.getElementById(page).style.display = 'flex'
-    document.getElementById('absol__menu').open = false
+    /* CHECK FIXED MENU */
+    if (document.getElementById('details__menu').open === true) {
+        document.getElementById('details__menu').open = false
+    }
 }
 
 // JS CHECK
