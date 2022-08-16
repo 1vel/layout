@@ -280,6 +280,8 @@ body, button { font-family: 'Press Start 2P', cursive; }
 /* SIZE PX */
 .--h50px { height: 50px; }
 .--w50px { width: 50px; }
+.--h75px { height: 75px; }
+.--w75px { width: 75px; }
 .--h100px { height: 100px; }
 .--w100px { width: 100px; }
 
@@ -322,13 +324,11 @@ footer {
     height: 100%;
 }
 /* ICON */
-.menu__icon {
-    border: 5px solid rgb(15, 15, 15);
-    background: #272727;
-}
 .menu__icon::marker { content: url('assets/icon/menu.svg'); }
-.menu__icon:hover { background: rgb(15, 15, 15); }
 details[open] > .menu__icon::marker { content: url('assets/icon/closemenu.svg'); }
+/* COLOR */
+.menu__icon--background { border: 5px solid rgb(15, 15, 15); background: #272727; }
+.menu__icon--background:hover { background: rgb(15, 15, 15); }
 /* MENU ANIMATIONS */
 .menu--to-right[open] { animation: to-right 1.5s cubic-bezier(0.165, 0.84, 0.44, 1); }
 .menu--to-left[open] { animation: to-left 1.5s cubic-bezier(0.165, 0.84, 0.44, 1); }
