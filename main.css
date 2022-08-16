@@ -270,8 +270,11 @@ body, button { font-family: 'Press Start 2P', cursive; }
 .fx-9 { flex: 9; }
 .fx-10 { flex: 10; }
 /* SIZE */
+.--hw0 { height: 0; }
 .--h0 { height: 0; }
 .--w0 { width: 0; }
+.--hw50 { height: 50%; width: 50%; }
+.--hw100 { height: 100%; width: 100%; }
 /* SIZE % */
 .--h50 { height: 50%; }
 .--w50 { width: 50%; }
@@ -392,28 +395,25 @@ details[open] > summary::marker {
     flex: 1 0 0;
     display: flex;
     height: 0;
+    width: 100%;
 }
-.flexbox > .option {
-    flex: 1;
-    /* curious, "object-fit: contain;" mantains aspect ratio, delete if you don't care about it */
-    object-fit: contain;
+
+.option {
     height: 100%;
     width: 100%;
 }
 
-.flexbox2 {
-    flex: 1 0 0;
-    display: flex;
-    height: 0;
-    width: 100%;
-}
-.flexbox2 > .option {
-    flex: 1;
-    /* curious, "object-fit: contain;" mantains aspect ratio, delete if you don't care about it */
-    object-fit: contain;
-    height: 100%;
-    width: 100%;
-}
+/***** OBJECT-FIT *****/
+/* curious, "object-fit: contain;" mantains aspect ratio, delete if you don't care about it */
+.fit--contain { object-fit: contain; } 
+.fit--cover { object-fit: cover; } 
+.fit--fill { object-fit: fill; }
+.fit--none { object-fit: none; }
+.fit--down { object-fit: scale-down; }
+.fit--inherit { object-fit: inherit; }
+.fit--initial { object-fit: initial; }
+.fit--unset { object-fit: unset; }
+
 /*
 Here is where the object-fit property comes in. The object-fit property can take one of the following values:
 - fill - This is default. The image is resized to fill the given dimension. If necessary, the image will be stretched or squished to fit
