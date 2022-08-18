@@ -344,10 +344,9 @@ details[open] > .menu__icon::marker { content: url('assets/icon/closemenu.svg');
 .menu__opt:hover {
     background-color: black;
 }
-.menu__option:hover {
+/*.menu__option:hover {
     background-color: black;
-}
-
+}*/
 
 
 /* VUELTA */
