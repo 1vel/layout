@@ -14,9 +14,12 @@
 
 /***** RESETING *****/
 * {
+    /*outline: 1px solid red;*/
     margin: 0;
     padding: 0;
     border: 0;
+    /* OVERFLOW RESET */
+    overflow: hidden;
     /* INNER BORDER */
     box-sizing: border-box;
     -moz-box-sizing: border-box;
